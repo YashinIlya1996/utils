@@ -39,5 +39,3 @@ class SOCKS_SMTP_SSL(smtplib.SMTP_SSL):
         new_socket = socks.create_connection((host, port), timeout, self.source_address, **asdict(self.proxy_conf))
         new_socket = self.context.wrap_socket(new_socket, server_hostname=self._host)
         return new_socket
-
-
