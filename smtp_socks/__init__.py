@@ -1,0 +1,2 @@
+from smtp_socks.smtp_socks import ProxyConnectionConf
+from smtp_socks.send_mail_proxy import send_mail
