@@ -7,7 +7,7 @@ from pathlib import Path
 from smtplib import SMTP_SSL
 from typing import Optional
 
-from .smtp_socks import ProxyConnectionConf, SOCKS_SMTP_SSL
+from smtp_socks.smtp_socks import ProxyConnectionConf, SOCKS_SMTP_SSL
 
 
 logger = logging.getLogger(__name__)
