@@ -1,13 +1,13 @@
 import smtplib
 import os
-from types import NoneType
-from typing import Optional, Union, TypeAlias
+from typing import Optional, Union
 from collections.abc import Iterable
 
 import socks
-from dataclasses import dataclass, asdict, fields
+from dataclasses import dataclass, asdict
 
-SockOpt: TypeAlias = Union[tuple[int, int, Union[int, bytes]], tuple[int, int, NoneType, int]]
+NoneType = type(None)
+SockOpt = Union[tuple[int, int, Union[int, bytes]], tuple[int, int, NoneType, int]]
 DEFAULT_SOCKS_PORT = 1080
 
 
