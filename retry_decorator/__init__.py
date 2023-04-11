@@ -1,1 +1,1 @@
-from retry import retry
+from retry import retry, default_request_retry
